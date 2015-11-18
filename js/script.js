@@ -1,15 +1,13 @@
-﻿(function($) {
-    $(document).ready(function() {
-        var is_mobile = false;
- 
-        if( $('.player').css('display')=='none') {
-            is_mobile = true;
-        }
-        if (is_mobile == true) {
-            //Conditional script here
-            $('.big-background').addClass('bg-dark');
-        }else{
-            $('.player').mb_YTPlayer();
-        }
-    });
-})(jQuery);
+﻿
+var about = $('#about');
+var portfolio = $('#portfolio');
+
+$('#about-link').click(function () {
+    portfolio.hide();
+    about.slideDown()
+});
+
+$('#portfolio-link').click(function () {
+    about.hide();
+    portfolio.slideDown();
+});
