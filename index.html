@@ -46,7 +46,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">MM</a>
+            <a class="navbar-brand page-scroll" href="#page-top"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,10 +56,10 @@
                     <a class="page-scroll" href="#about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    <a class="page-scroll" href="#services">Services</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -74,77 +74,43 @@
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <h1>Marco Moutinho <br /><small>Software Developer</small></h1>
+            <h1>Marco Moutinho <br /><small class="light">Software Developer</small></h1>
             <hr>
             <a href="#about" class="big-background-btn page-scroll">Find Out More</a>
         </div>
     </div>
 </header>
 
-        <section class="bg-primary" id="about">
+        <!-- Scroll to top button -->
+<div class="scroll-top-wrapper ">
+    <a href="#page-top" class="page-scroll">
+        <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+        </span>
+    </a>
+</div>
+
+
+
+<section class="bg-light" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">About Me</h2>
-                <hr class="light">
+                <hr class="primary">
                 <img class="img-circle" src="img/marco_headshot.png" alt="Marco Moutinho Picture">
-                <p class="text-faded add-default-margin">
-                    My name is Marco Moutinho and I am a developer who is very passionate about software development, 
+                <p class="add-default-margin">
+                    My name is Marco Moutinho and I am a developer who is very passionate about software engineering, 
                     whether it be web, mobile, desktop, or backend. I enjoy writing software and increasing my knowledge in 
-                    my spare time. I believe my passion is what drives me to always work at my best. This allows me to be 
-                    very productive and keep focus.
+                    my spare time. I believe my passion is what drives me to always work at my best. 
                     <br /><br />
                     I enjoy taking on challenging tasks and prefer them over simple ones. When working on projects, 
                     not only do I focus on getting the job done but I also place a high priority on code quality, readability, 
-                    reusability, and robustness. I am a strong and committed team player, with excellent communication skills. 
-                    I have also been able to master the ability to work independently and efficiently, and I consider myself to be a quick learner.
+                    reusability, and maintainability.
                     <br /><br />
                     When not writing, or learning about, code, I enjoy gaming. I also do my best to stay healthy by eating right and 
                     going to the gym 4 to 5 times a week.
                 </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="services" class="bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">At Your Service</h2>
-                <hr class="primary">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                    <h3>Sturdy Templates</h3>
-                    <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                </div>
-            </div>
-            <div class="col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                    <h3>Ready to Ship</h3>
-                    <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                </div>
-            </div>
-            <div class="col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>Up to Date</h3>
-                    <p class="text-muted">We update dependencies to keep things fresh.</p>
-                </div>
-            </div>
-            <div class="col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                    <h3>Made with Love</h3>
-                    <p class="text-muted">You have to make your websites with love these days!</p>
-                </div>
             </div>
         </div>
     </div>
@@ -241,11 +207,27 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="portfolio">
+                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#game-modal">
+                        <img src="img/video-game.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <i class="fa fa-search fa-2x"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-caption text-center">
+                        <h4 class="text-primary thick">Project Red Gorilla</h4>
+                        <p class="text-muted italic">Video Game Development</p>
+                    </div>
+                </div>
+            </div>
         </div> <!-- row -->
     </div>
 </section>
 
-<section class="big-background">
+<section class="big-background hidden-xs">
     <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=53LWPkRyPF0',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
 
     <div class="pattern"></div>
@@ -253,12 +235,55 @@
         <div class="big-background-inner">
             <h1>Project Red Gorilla<br /><small>Multiplayer Video Game</small></h1>
             <hr />
-            <a href="https://www.youtube.com/embed/fcy4TMj2Bzw?rel=0&autoplay=1" class="big-background-btn">Watch Full Trailer</a>
+            <a target="_blank" href="https://www.youtube.com/embed/fcy4TMj2Bzw?rel=0&autoplay=1" class="big-background-btn">Watch Full Trailer</a>
         </div>
     </div>
 </section>
 
-<section id="contact" class="bg-light">
+<section id="services" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">At Your Service</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center add-default-margin">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                    <h3>Web Design</h3>
+                    <p class="text-muted">Focusing on modern looking websites.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center add-default-margin">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-mobile wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                    <h3>App Development</h3>
+                    <p class="text-muted">Building apps on mobile or web.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center add-default-margin">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-support wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <h3>Support</h3>
+                    <p class="text-muted">Available for contract work for new and existing projects.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center add-default-margin">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <h3>Made with Love</h3>
+                    <p class="text-muted">You have to make your apps with love these days!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="bg-dark">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -295,12 +320,9 @@
                         <h2 class="thick">Pawlish The Dog Spa</h2>
                         <p class="item-intro text-muted italic">Web Design</p>
                         <img class="img-responsive img-centered" src="img/pawlish.png" alt="">
-                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                        <p>
-                            <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.
-                        </p>
+                        <p>A website created for a dog grooming salon. The website was built using HTML, CSS, JavaScript/jQuery, PHP, and Bootstrap</p>
                         <ul class="list-inline">
-                            <li><a href="http://www.pawlishthedogspa.com">Visit Page</a></li>
+                            <li><a class="big-btn" target="_blank" href="http://www.pawlishthedogspa.com">Visit Page</a></li>
                         </ul>
                         <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                     </div>
@@ -323,17 +345,12 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2 class="thick">Project Name</h2>
-                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                        <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                        <p>
-                            <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.
-                        </p>
+                        <h2 class="thick">Fit4Adventure</h2>
+                        <p class="item-intro text-muted italic">Web Design</p>
+                        <img class="img-responsive img-centered" src="img/fit4adventure.png" alt="">
+                        <p>A website created for a fitness company focusing on getting fit for adventure races/obstacles. The website was built using HTML, CSS, JavaScript/jQuery, PHP, and AJAX</p>
                         <ul class="list-inline">
-                            <li>Date: July 2014</li>
-                            <li>Client: Round Icons</li>
-                            <li>Category: Graphic Design</li>
+                            <li><a class="big-btn" target="_blank" href="http://www.fit4adventure.ca">Visit Page</a></li>
                         </ul>
                         <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                     </div>
@@ -356,17 +373,12 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2 class="thick">Project Name</h2>
-                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                        <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                        <p>
-                            <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.
-                        </p>
+                        <h2 class="thick">Hollywood Mobile Auto Detailing</h2>
+                        <p class="item-intro text-muted italic">Web Design</p>
+                        <img class="img-responsive img-centered" src="img/hollywood.png" alt="">
+                        <p>A website created for an auto detailing company, focusing on bringing its detailing service to you with its on site service. The website was built using HTML, CSS, JavaScript/jQuery, and Bootstrap</p>
                         <ul class="list-inline">
-                            <li>Date: July 2014</li>
-                            <li>Client: Round Icons</li>
-                            <li>Category: Graphic Design</li>
+                            <li><a class="big-btn" target="_blank" href="http://www.hollywoodautodetailing.ca">Visit Page</a></li>
                         </ul>
                         <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                     </div>
@@ -389,17 +401,12 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2 class="thick">Project Name</h2>
-                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                        <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                        <p>
-                            <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.
-                        </p>
+                        <h2 class="thick">Paragon Roofing Ltd.</h2>
+                        <p class="item-intro text-muted italic">Web Design</p>
+                        <img class="img-responsive img-centered" src="img/paragon_site.png" alt="">
+                        <p>Under Development. .NET backend, HTML, CSS, JavaScript, and Bootstrap will be used to develop this site.</p>
                         <ul class="list-inline">
-                            <li>Date: July 2014</li>
-                            <li>Client: Round Icons</li>
-                            <li>Category: Graphic Design</li>
+                            <li><a class="big-btn" target="_blank" href="http://www.paragonroofing.ca">Visit Page</a></li>
                         </ul>
                         <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                     </div>
@@ -422,17 +429,52 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2 class="thick">Project Name</h2>
-                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                        <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                        <h2 class="thick">Paragon Roofing Ltd. Time App</h2>
+                        <p class="item-intro text-muted italic">App Development</p>
+                        <img class="img-responsive img-centered" src="img/paragon_app.png" alt="">
                         <p>
-                            <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.
+                            Currently under development, this app will be a mobile/web app. A custom application designed for employees to track their hours. The site supervisor will have access to enter hours for each day, 
+                            the workers will have readonly access to those hours and will be able to submit a ticket if the hours they worked do not match those entered. 
+                            <br /><br />
+                            Payroll will also be able to login and get the total hours for the week to begin processing that weeks payroll. Other custom features such as expense calculations and estimation calculator will be available
+                            for certain user roles.
+                            <br /><br />
+                            This app will be created using a .NET backened with access to data through a Web API. Will be developed for Android and iOS. A web interface will also be available for desktop access.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal - Video Game -->
+<div class="portfolio-modal modal fade" id="game-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2 class="thick">Project Red Gorilla</h2>
+                        <p class="item-intro text-muted italic">Video Game Development</p>
+                        <img class="img-responsive img-centered" src="img/video-game.jpg" alt="">
+                        <p>
+                            A video game developed for my capstone, reached finals and placed in 3rd at the Capstone Competition.
+                            <br /><br />
+                            An online space shooter with a focus on ability powers that can be selected at game lobby. Its a 3 vs 3 combat game with 2 game modes;
+                            Team Death Match and Destroy The Carrier.
+                            <br /><br />
+                            Developed using Unity3D Engine, C#, and Photon Networking.
                         </p>
                         <ul class="list-inline">
-                            <li>Date: July 2014</li>
-                            <li>Client: Round Icons</li>
-                            <li>Category: Graphic Design</li>
+                            <li><a target="_blank" href="https://www.youtube.com/embed/fcy4TMj2Bzw?rel=0&autoplay=1" class="big-btn">Watch Trailer</a></li>
                         </ul>
                         <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                     </div>
@@ -478,6 +520,19 @@
                     }
                 });
             })(jQuery);
+
+            $(function () {
+
+                $(document).on('scroll', function () {
+
+                    if ($(window).scrollTop() > 100) {
+                        $('.scroll-top-wrapper').addClass('show');
+                    } else {
+                        $('.scroll-top-wrapper').removeClass('show');
+                    }
+                });
+            });
+
         </script>
     </body>
 
